@@ -15,11 +15,11 @@ body {
   font-size: 1.6rem;
   font-family: "Fira Sans", sans-serif;
   color: #383838;
-  background-color: #f8f8f8;
+  background-color: #000;
 }
 
 a {
-  color: #7b9d6f;
+  color: #cc9900;
   text-decoration: none;
 }
 
@@ -42,6 +42,7 @@ Main Components
 }
 .cd-horizontal-timeline.loaded {
   /* show the timeline after events position has been set (using JavaScript) */
+  background: #f8f8f8;
   opacity: 1;
 }
 .cd-horizontal-timeline .timeline {
@@ -97,7 +98,7 @@ Main Components
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #7b9d6f;
+  background-color: #cc9900;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
   -ms-transform: scaleX(0);
@@ -149,18 +150,18 @@ Main Components
   transition: background-color 0.3s, border-color 0.3s;
 }
 .no-touch .cd-horizontal-timeline .events a:hover::after {
-  background-color: #7b9d6f;
-  border-color: #7b9d6f;
+  background-color: #cc9900;
+  border-color: #cc9900;
 }
 .cd-horizontal-timeline .events a.selected {
   pointer-events: none;
 }
 .cd-horizontal-timeline .events a.selected::after {
-  background-color: #7b9d6f;
-  border-color: #7b9d6f;
+  background-color: #cc9900;
+  border-color: #cc9900;
 }
 .cd-horizontal-timeline .events a.older-event::after {
-  border-color: #7b9d6f;
+  border-color: #cc9900;
 }
 @media only screen and (min-width: 1100px) {
   .cd-horizontal-timeline {
@@ -225,7 +226,7 @@ Main Components
   right: 0;
 }
 .no-touch .cd-timeline-navigation a:hover {
-  border-color: #7b9d6f;
+  border-color: #cc9900;
 }
 .cd-timeline-navigation a.inactive {
   cursor: not-allowed;
@@ -405,4 +406,49 @@ Main Components
     -o-transform: translateX(0%);
     transform: translateX(0%);
   }
+}
+
+.button{
+  text-align: center;
+}
+
+.btn {
+  width: 300px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #666666;
+  border-radius: 0.6em;
+  color: #666666;
+  cursor: pointer;
+  display: inline-block;
+  align-self: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  font-weight: 700;
+}
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.first {
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.first:hover {
+  box-shadow: 0 0 40px 40px #666666 inset;
+}
+
+img{
+  display: block;
+  padding: 20px 0;
 }
