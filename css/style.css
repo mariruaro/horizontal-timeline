@@ -436,8 +436,13 @@ Main Components
 
   font-weight: 700;
 }
-.btn:hover, .btn:focus {
+.btn:hover {
   color: #fff;
+  outline: 0;
+}
+
+.btn:focus {
+  color: #a6a6a6;
   outline: 0;
 }
 
@@ -448,7 +453,52 @@ Main Components
   box-shadow: 0 0 40px 40px #666666 inset;
 }
 
-img{
+.events-content img{
   display: block;
   padding: 20px 0;
+}
+
+.home,.atual{
+  height: auto !important;
+}
+
+.home h2{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.links{
+    text-align: center;
+    margin: 70px 0;
+}
+
+.item-links{
+  font-size: 35px;
+  line-height: 90px;
+}
+
+.item-links:hover{
+  text-decoration: underline;
+}
+
+.home span{
+  float: right;
+  color: #a6a6a6;
+  padding-bottom: 20px;
+}
+
+.atual{
+  max-width: 650px !important;
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+
+.conteudo{
+  text-align: center;
+}
+
+.conteudo h4{
+  font-size: 24px;
+  padding: 20px 0;
+  color: #666;
 }
