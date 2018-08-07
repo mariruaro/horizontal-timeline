@@ -1,5 +1,5 @@
-Efeitos Especiais em Filmes
-Mariana Ruaro vigano
+Efeitos Especiais em Filmes - 
+Mariana Ruaro Vigano
 =========
 
 Referências 
